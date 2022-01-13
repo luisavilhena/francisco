@@ -161,7 +161,6 @@ footer div {
 .content-flex {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
 }
 
 .content-about {
@@ -459,5 +458,8 @@ body {
  }
  .ursinho img {
  	height: 104px;
+ }
+ .content-flex {
+ 		flex-wrap: wrap;
  }
 }
