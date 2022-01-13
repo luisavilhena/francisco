@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 77px;
+	margin-bottom: 20px;
+	line-height: 80px;
+	color: #F4AC3D;
+}
+h2 {
+	text-decoration: underline;
+	font-family: 'Lobster', cursive;
+	font-size: 53px;
+	margin-bottom: 20px;
+	color: #84bfbc;
+}
+h3 {
+	font-family: 'Lora', serif;
+	font-size: 25px;
+	margin-bottom: 15px;
+	color: #F4AC3D;
+}
+h4 {
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #273b4c;
+}
+h5 {
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #273b4c;
+	font-weight: bold;
+}
+p {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: #273b4c;
+	margin-bottom: 10px;
+}
+a {
+	margin-top: 10px;
+	padding: 11px;
+	text-decoration: none;
+	background-color: #f2bc76;
+	border-radius: 3px;
+	display: inline-block;
+	color: #273b4c;
+	font-weight: bold;
+}
+a:hover {
+	color: white;
+}
+main {
+	position: relative;
+}
+.banner {
+	display: flex;
+	justify-content: center;
+	/*background-color: #1E5C8B;*/
+}
+
+.banner img {
+	/*height: 100vh;*/
+}
+.content {
+	padding: 100px 50px;
+	background-color: #e1eaf2;
+}
+.ursinho img {
+	position: absolute;
+	right: 20px;
+	height: 150px;
+	animation: go-back 1s infinite alternate;
+	bottom: 22px;
+}
+
+footer {
+	padding: 100px 50px;
+	background-color: #f9f6d4;
+	/*animation: go-back 1s infinite alternate;*/
+}
+
+footer img {
+	/*animation: go-back 1s infinite alternate;*/
+}
+@keyframes go-back {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+footer div {
+	text-align: center;
+}
+.grama {
+	background-color: #f9f6d4;
+}
+
+.grama img {
+	position: absolute;
+	height: 306px;
+	left: 33px;
+  bottom: -188px;
+  opacity: 0.5;
+}
+.content-max-width {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.content-flex {
+	display: flex;
+	justify-content: center;
+}
+.content-about {
+	position: relative;
+	/*background-color: #c9dbe9;*/
+
+}
+
+.content-about .foto  img {
+	max-height: 400px;
+}
+.arvore {
+	/*z-index: -10;*/
+}
+.content-about .arvore img {
+	position: absolute;
+	width: 581px;
+	max-height: auto;
+  left: 0;
+  opacity: 0.2;
+}
+.content-about .galho img {
+	position: absolute;
+	width: 381px;
+	max-height: auto;
+  right: 0;
+  bottom: -100px;
+  opacity: 0.2;
+}
+.content-about .content-max-width div:first-of-type {
+	margin-right: 20px;
+}
+.content-list .list-apresentation {
+	text-align: center;
+	margin-bottom: 80px;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.list-item {
+	min-width: 300px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+.img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 300px;
+	margin-bottom: 20px;
+}
+.img-1 {
+	background-image: url("src/fraldas.jpeg");
+}
+.img-2 {
+	background-image: url("src/kithigiene.jpeg");
+}
+.img-3 {
+	background-image: url("src/tolhadebanho.jpeg");
+}
+.img-4 {
+	background-image: url("src/roupasdecama.jpeg");
+}
+.img-5 {
+	background-image: url("src/roupinhas.jpeg");
+}
+.img-6 {
+	background-image: url("src/mobile.jpeg");
+}
+.img-7 {
+	background-image: url("src/sling.jpeg");
+}
+.img-8 {
+	background-image: url("src/baba.jpeg");
+}
+.img-9 {
+	background-image: url("src/bolsa.jpeg");
+}
+.img-10 {
+	background-image: url("src/carrinho.jpeg");
+}
+.img-11 {
+	background-image: url("src/guarda.jpeg");
+}
+.img-12 {
+	background-image: url("src/brinquedos.jpeg");
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.rainbow {
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+}
+
+.rainbow::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 6px;
+	top: 6px;
+	width: calc(100% - 12px);
+	height: calc(100% - 12px);
+	/*background: white;*/
+	border-radius: 5px;
+}
+.rainbow::before {
+	content: '';
+	position: absolute;
+	z-index: -2;
+	left: -50%;
+	top: -50%;
+	width: 200%;
+	height: 200%;
+	background-color: #399953;
+	background-repeat: no-repeat;
+	background-size: 50% 50%, 50% 50%;
+	background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+	background-image: linear-gradient(#9eb8ed, #9eb8ed), linear-gradient(#9fe0dc, #9fe0dc), linear-gradient(#FBEFBE, #FBEFBE), linear-gradient(#DD757C, #DD757C);
+}
+.rainbow:hover::before {
+	animation: rotate 10s linear infinite;
+}
+.rainbow:hover h4 {
+	font-weight: bold;
+}
+.rainbow:hover  {
+	background-color: yellow;
+}
+*{ margin: 0; padding: 0;}
+
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	overflow-x: hidden;
+}
+
+#clouds{
+	position: relative;
+	padding: 100px 0 0 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.passarinho img {
+	width: 330px;
+	margin: 0;
+	position: absolute; 
+	top: 475px;                 
+	left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.texto {
+	margin: 0;
+	position: absolute; 
+	top: 221px;                 
+	left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1500px;}
+	100% {margin-left: -1500px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1500px;}
+	100% {margin-left: -1500px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1500px;}
+	100% {margin-left: -1500px;}
+}
