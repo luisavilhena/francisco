@@ -161,7 +161,9 @@ footer div {
 .content-flex {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
+
 .content-about {
 	position: relative;
 	/*background-color: #c9dbe9;*/
@@ -193,6 +195,7 @@ footer div {
 }
 .content-about .content-max-width div:first-of-type {
 	margin-right: 20px;
+	margin-bottom: 30px;
 }
 .content-list .list-apresentation {
 	text-align: center;
@@ -445,4 +448,16 @@ body {
 @-o-keyframes moveclouds {
 	0% {margin-left: 1500px;}
 	100% {margin-left: -1500px;}
+}
+
+@media screen and (max-width:800px ) {
+ .content-about .arvore img {
+ 		width: 100%;
+ }
+ .content-about .galho img {
+ 		bottom: -694px;
+ }
+ .ursinho img {
+ 	height: 104px;
+ }
 }
