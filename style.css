@@ -112,6 +112,12 @@ p {
 .btn-hover:hover span {
 	display: none;
 }
+.btn-hover:focus p {
+	display: block;
+}
+.btn-hover:focus span {
+	display: none;
+}
 main {
 	position: relative;
 	overflow-x: hidden;
@@ -217,6 +223,14 @@ footer div {
 .content-list .list-apresentation {
 	text-align: center;
 	margin-bottom: 80px;
+}
+.footer-a {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	color: #F4AC3D;
 }
 .list {
 	display: flex;
